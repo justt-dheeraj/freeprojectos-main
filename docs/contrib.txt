@@ -1,0 +1,16 @@
+If you ever want to contrib to FREEProjectOS please glady do so!
+FREEProjectOS is open to any suggestions as well :)
+
+If you want to contribute here's what you need:
+
+To make changes to the source code:
+
+python3, commandline.
+
+To test out your changes:
+running the python file via startOS.bat
+
+Then whats your ready make a fork of FREEProjectOS and make a pull request.
+However don't get your hopes up that every pull request by you will get accepted.
+
+If a pull request gets denied There will be a ression why.
