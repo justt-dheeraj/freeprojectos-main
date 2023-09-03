@@ -1,0 +1,3 @@
+psutil
+PyQtWebEngine
+PyQt5
