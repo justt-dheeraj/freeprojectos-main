@@ -1,5 +1,6 @@
 import os
 import time
+import utils
 
 print("Hey there! Welcome to FREEProjectOS")
 print("FREEProjectOS is secure open source python operating system")
@@ -13,7 +14,7 @@ print("Via the BioS system or even safemode.")
 print("") # Space.
 print("Press [Any Key] to continue")
 input()
-os.system('cls')
+cls()
 print("Theres a lot you can do in FREEProjectOS.")
 print("Wanna paint? You can do that!")
 print("Wanna play ticktacktoe or some other game?")
@@ -25,7 +26,7 @@ print("Every day FREEProjectOS is being worked on.")
 print("And often it gets security updates and software updates.")
 print("Press [Any Key] to continue")
 input()
-os.system('cls')
+cls()
 print("Oh speaking of which!")
 print("You should learn how to update your system.")
 print("Keeping FREEProjectOS updated is very important to protecting your")

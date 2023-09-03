@@ -2,6 +2,7 @@
 
 import time
 import os
+import utils
 
 # Always execute KernelOS.py to start the OS.
 # This contains our setup including setting up basic
@@ -12,7 +13,7 @@ import os
 # Close giving you no time to read the error message and which line
 # python doesn't like.
 
-os.system('cls') # Just in case theres any gunk before the OS starts.
+utils.cls() # Just in case theres any gunk before the OS starts.
 print("Booting.")
 time.sleep(1)
 print("Booting..")
@@ -20,7 +21,7 @@ time.sleep(1)
 print("Booting...")
 time.sleep(1)
 
-os.system('cls')
+utils.cls()
 print("""
 
 ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗  ████████╗░█████╗░
@@ -38,7 +39,7 @@ print("""
 """)
 
 time.sleep(5)
-os.system('cls')
+utils.cs()
 print("""
 [1] Safe mode. (FreeProjectOS PE)
 [2] Boot normally.
@@ -54,7 +55,7 @@ if safeselect == '1':
 if safeselect == '2':
 	print("Okay!")
 	time.sleep(1)
-	os.system('cls')
+	utils.cls()
 	# Move on and continue booting kernelOS.
 
 # The proper way of booting kernelOS really is clicking on the py file.
