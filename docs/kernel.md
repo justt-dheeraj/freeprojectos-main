@@ -1,23 +1,20 @@
-## Kernel.py
+## kernel.py
 
 This is our FREEProjectOS Kernel.
 
 The FREEProjectOS currently handles the bootloader, accounts, and soon
 when I develop it of course memory mangement!
 
-So when coding the Kernel please be carefull.
+### Note for contributors: Carefully test the kernel for bugs.
 
-Let be explain some parts of the code:
+Lets have a look at the code:
 
-
-##
+```py
 if setup == '1':
 	name = input(str("Please enter your User Name To Be Displayed: "))
 	pas = input(str("Please enter your Password to login: "))
 
 	lines = [name]
-	# Using "pass" as the extension type to provide some level of encryption.
-	# Since file explorer by default doesn't recongize pass as a text file.
 	with open('user/username.pass', 'w') as f:
 		f.writelines(lines)
 
@@ -56,8 +53,6 @@ if setup == '1':
 	input("Press Enter to Close Window: ")
 
 if setup == '2':
-	# Read our username and password
-	# Like a goodboy.
 	login_pass = open('user/password.pass')
 	login_name = open('user/username.pass')
 	l_p = login_pass.read()
@@ -73,7 +68,7 @@ if setup == '2':
 				print("Invaild password, Try again!")
 
 
-##
+```
 
 This part of the code takes user input. It provides
 two options. Either to continue with the setup or
@@ -85,8 +80,8 @@ If you want you can add a option by adding it to the "print" prompt then
 add it to the list of if statements.
 
 For example:
-
-print(""
+```py
+print("""
 [1] Continue with setup.
 [2] I've already done the setup.
 [3] Exit
@@ -102,5 +97,4 @@ if setup == '2':
 
 if setup == '3':
 	# do stuff.
-
-There you go!
+```

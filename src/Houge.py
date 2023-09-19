@@ -3,6 +3,7 @@
 import random
 import time
 import os
+import utils
 
 weapons = ["Sword", "Spell", "Fire"]
 shields = ["Armour", "Magic", "Water"]
@@ -62,13 +63,13 @@ class Game:
             self.gameOver = True
             print("You Win")
             time.sleep(4)
-            os.system('cls')
+            utils.cls()
             os.startfile("home.py")
         elif player.health < 1 and ai.health < 1:
             self.gameOver = True
             print("*** Draw ***")
             time.sleep(4)
-            os.system('cls')
+            utils.cls()
             os.startfile("home.py")
 
 

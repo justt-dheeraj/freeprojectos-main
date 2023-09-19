@@ -7,6 +7,7 @@
 import time
 import os
 import random
+import utils
 
 # The resson why we are reading the
 # username and password is because
@@ -197,7 +198,7 @@ if select == '5':
 	os.startfile("home.py")
 
 if select == '6':
-	os.system('cls')
+	utils.cls()
 	print("Rebooting...")
 	time.sleep(3)
 	os.startfile("Kernel.py")
@@ -214,7 +215,7 @@ if select == '9':
 	os.startfile("tour.py")
 
 if select == '10':
-	os.system('cls')
+	utils.cls()
 	print("Shutting down...")
 	print("Thank you for using FreeProjectOS!")
 	time.sleep(3)

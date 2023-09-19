@@ -1,7 +1,8 @@
 import os
 import time
+import utils
 
-os.system('cls')
+utils.cls()
 
 print("""
 [1] Houge
@@ -14,12 +15,12 @@ while True:
     game_select = input(str("[?]: "))
 
     if game_select == '1':
-        os.system('cls')
+        utils.cls()
         os.startfile("Houge.py")
         break
 
     elif game_select == '2':
-        os.system('cls')
+        utils.cls()
         os.startfile("ticktacktoe.py")
         break
 

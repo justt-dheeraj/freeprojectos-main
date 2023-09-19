@@ -2,20 +2,21 @@
 
 import os
 import time
+import utils
 
 login_pass = open('user/password.pass')
 login_name = open('user/username.pass')
 l_p = login_pass.read()
 l_u = login_name.read()
 
-os.system('cls')
+utils.cls()
 print("Okay!")
-os.system('cls')
+utils.cls()
 print("Booting into safemode")
 time.sleep(3)
 print("Booted!")
 
-os.system('cls')
+utils.cls()
 
 print("FREEProjectOS [REPAIR MODE]")
 print("Type [help] to get some REPAIR commands.")
@@ -120,7 +121,7 @@ while True:
 		print("") # Space.
 
 	elif command == 'clear':
-		os.system('cls')
+		utils.cls()
 		print("FREEProjectOS [REPAIR MODE]")
 		print("Type [help] to get some REPAIR commands.")
 		print("") # Space.
@@ -132,7 +133,7 @@ while True:
 		break		
 
 	elif command == 'reboot':
-		os.system('cls')
+		utils.cls()
 		print("REBOOTING...")
 		time.sleep(2)
 		os.startfile('Kernel.py')
